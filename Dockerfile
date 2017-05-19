@@ -26,6 +26,7 @@ RUN { \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
 RUN a2enmod rewrite expires
+ENV TEST true
 
 VOLUME /var/www/html
 
